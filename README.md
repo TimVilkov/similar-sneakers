@@ -1,7 +1,36 @@
 simular-sneakers
 ==============================
 
-My diploma project
+My diploma project.
+
+**Author:** Timofey Vilkov 
+
+**Scientific supervisor:** Panchuk George 
+
+**Formulation of the problem:** 
+Create a platform for searching for simular sneakers by user input image
+
+**Roadmap:**
+TBD
+
+**Data description:**
+Data: parsed shoe items from  https://www.ssense.com/.
+
+Used endpoints:
+- https://www.ssense.com/en-id/men/shoes.json 
+- https://www.ssense.com/en-id/women/shoes.json
+
+Raw data: ```sneakers/data/raw_data_urls.json```
+
+CSV with urls: ```sneakers/data/url_dataset.csv```
+
+Default image resolution: **940x960**
+
+**Service description:**
+Telegram bot with comfortable UX for user
+
+**Stack:**
+TBD
 
 Project Organization
 ------------
@@ -32,11 +61,15 @@ Project Organization
     │                         generated with `pip freeze > requirements.txt`
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
+    ├── sneakers           <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
     │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
+    │   │   ├── make_dataset.py
+    │   │   ├── curl_params.py
+    |   |   ├── ssense_scrapings.ipynb
+    |   |   ├── url_dataset.csv
+    |   |   └── raw_data_urls.json
     │   │
     │   ├── features       <- Scripts to turn raw data into features for modeling
     │   │   └── build_features.py
