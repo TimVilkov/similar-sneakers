@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "simular-sneakers"
+version = "0.1.0"
+description = ""
+authors = ["Timofey Vilkov <stocer05@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+pandas = "^2.2.0"
+numpy = "^1.26.3"
+requests = "^2.31.0"
+cloudscraper = "^1.2.71"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
