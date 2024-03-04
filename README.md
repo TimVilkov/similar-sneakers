@@ -1,17 +1,24 @@
-simular-sneakers
+similar-sneakers
 ==============================
 
-My diploma project.
 
 **Author:** Timofey Vilkov 
 
-**Scientific supervisor:** Panchuk George 
+**Supervisor:** Panchuk Georgii
 
 **Formulation of the problem:** 
-Create a platform for searching for simular sneakers by user input image
+Creating a text2image platform based on multimodal models for searching similar sneakers by user text description.
 
 **Roadmap:**
-TBD
+- Data scraping and preprocessing (05.03.2023)
+- EDA (15.03.2023)
+- Data subsample labeling (20.03.2023)
+- Studying and testing multimodal models, сhoosing the best one (20.04.2023)
+- MLOps (05.04.2023)
+- Developing UI & creating bot (15.05.2023)
+- Inference optimization (31.05.2023)
+- Grafana metrics report (15.06.2023)
+
 
 **Data description:**
 Data: parsed shoe items from  https://www.ssense.com/.
@@ -20,11 +27,23 @@ Used endpoints:
 - https://www.ssense.com/en-id/men/shoes.json 
 - https://www.ssense.com/en-id/women/shoes.json
 
-Raw data: ```sneakers/data/raw_data_urls.json```
+Raw data: [sneakers/data/raw_data_urls.json](https://drive.google.com/file/d/1YjrbNsDI4OPhuWZ4-Ant5XzztwnVs5La/view?usp=drive_link)
 
-CSV with urls: ```sneakers/data/url_dataset.csv```
+CSV with urls: [sneakers/data/url_dataset.csv](https://drive.google.com/file/d/1PxjAPSr1X4vNzRaQphB4S4vD7ACB5ZiO/view?usp=drive_link)
 
 Default image resolution: **940x960**
+
+Dataset size: **42240** images 
+
+Features:
+ - brand
+ - name (not always unique, e.g. Black Leather Loafers)
+ - gender
+ - categories
+ - images
+ - seoKeyword
+ - priceByCountry
+ - url
 
 **Service description:**
 Telegram bot with comfortable UX for user
@@ -67,9 +86,7 @@ Project Organization
     │   ├── data           <- Scripts to download or generate data
     │   │   ├── make_dataset.py
     │   │   ├── curl_params.py
-    |   |   ├── ssense_scrapings.ipynb
-    |   |   ├── url_dataset.csv
-    |   |   └── raw_data_urls.json
+    |   |   └── ssense_scrapings.ipynb
     │   │
     │   ├── features       <- Scripts to turn raw data into features for modeling
     │   │   └── build_features.py
