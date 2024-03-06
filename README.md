@@ -12,32 +12,26 @@ Creating a text2image platform based on multimodal models for searching similar 
 **Roadmap:**
 - Searching sites with large number of items (01.01.2023 — 01.03.2023)
     - analyze the quality of content
-    - test complexity of parsing
+    - estimate complexity of parsing
 - Data scraping and preprocessing (05.03.2023 — 15.03.2023)
     - write parser
     - parse and scrape data
     - extract data from raw responses
     - collecting images 
 - EDA (15.03.2023 — 20.03.2023)
-    - visualize distributions
-    - calculate base statistics
 - Data subsample labeling (20.03.2023 — 27.03.2023)
-    - label a random batch of data for future models performance validation 
 -  Research multimodal models, сhoosing the best one (27.03.2023 — 20.04.2023)
-    - learning theorethical materials about most common multimodal models
-    - testing different models on labelled subset of the data
+    - evaluation of selected models using labelled subset of the data
     - define metrics for decision making
     - choosing the best model
-- MLOps (27.03.2023 — 05.04.2023)
+- ML system design (27.03.2023 — 15.04.2023)
+- ML system implementation (15.04.2023 — 15.05.2023)
     - writing code for inference
     - hosted app on the server
-- Developing UI & creating bot (05.04.2023 — 15.05.2023)
     - create bot
     - create base flow for interact with user
-- Inference optimization (15.05.2023 — 31.05.2023)
-    - speed up time of inference
-- Grafana metrics report (31.05.2023 — 15.06.2023)
     - logging base metrics about load on the model
+- Inference optimization (15.05.2023 — 31.05.2023)
 
 
 **Data description:**
