@@ -13,7 +13,7 @@ Creating a text2image platform based on multimodal models for searching similar 
 - Searching sites with large number of items (01.01.2023 — 01.03.2023)
     - analyze the quality of content
     - estimate complexity of parsing
-- Data scraping and preprocessing (05.03.2023 — 15.03.2023)
+- Implement parser for scraping image and text data from sneaker platforms (05.03.2023 — 15.03.2023)
     - write parser
     - parse and scrape data
     - extract data from raw responses
@@ -21,8 +21,8 @@ Creating a text2image platform based on multimodal models for searching similar 
 - EDA (15.03.2023 — 20.03.2023)
 - Data subsample labeling (20.03.2023 — 27.03.2023)
 -  Research multimodal models, сhoosing the best one (27.03.2023 — 20.04.2023)
-    - evaluation of selected models using labelled subset of the data
     - define metrics for decision making
+    - evaluation of selected models using labelled subset of the data
     - choosing the best model
 - ML system design (27.03.2023 — 15.04.2023)
 - ML system implementation (15.04.2023 — 15.05.2023)
