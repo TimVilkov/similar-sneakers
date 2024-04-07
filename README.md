@@ -41,9 +41,9 @@ Used endpoints:
 - https://www.ssense.com/en-id/men/shoes.json 
 - https://www.ssense.com/en-id/women/shoes.json
 
-Raw data: [sneakers/data/raw_data_urls.json](https://drive.google.com/file/d/1YjrbNsDI4OPhuWZ4-Ant5XzztwnVs5La/view?usp=drive_link)
+Raw data: [raw_data_urls.json](https://drive.google.com/file/d/1_AV2qeNhgLBQhHCqvCX32LwecxtRUUPQ/view?usp=sharing)
 
-CSV with urls: [sneakers/data/url_dataset.csv](https://drive.google.com/file/d/1PxjAPSr1X4vNzRaQphB4S4vD7ACB5ZiO/view?usp=drive_link)
+CSV with urls: [url_dataset.csv](https://drive.google.com/file/d/1wjcCLON6mK-wjriYHQsaz4Cks1ehty50/view?usp=sharing)
 
 Default image resolution: **940x960**
 
