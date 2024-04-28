@@ -1,0 +1,7 @@
+services:
+
+  db:
+    # Имя образа. Здесь мы используем базу данных Postgres
+    image: qdrant/qdrant
+    ports: # Проброс портов
+      - "6333:6333"
