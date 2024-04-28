@@ -24,14 +24,7 @@ def do_get(args):
                 response.raw.decode_content = True
                 shutil.copyfileobj(response.raw, f)       
     return True
-    
 
-def thread_parsing(urls):
-    with ThreadPoolExecutor(1) as executor:
-        results = executor.map(do_get, urls)
-        return "done"
-        
-        
         
 def multiprocess_parsing(data):
     _start = time.time()
