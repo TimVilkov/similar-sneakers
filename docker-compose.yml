@@ -1,7 +1,32 @@
-services:
+version: '3.5'
 
+networks:
+  data-service-networks:
+    driver: bridge
+
+services:
   db:
     # Имя образа. Здесь мы используем базу данных Postgres
     image: qdrant/qdrant
     ports: # Проброс портов
       - "6333:6333"
+    container_name: 'db'
+    healthcheck: 
+      test: "curl -f http://db"
+      interval: 15s
+      timeout: 1m
+      retries: 2
+    networks:
+      - data-service-networks
+    
+
+  clip:
+    image: inference  # Используем имя вашего Docker-образа
+    build: 
+      dockerfile: inference/dockerfile
+    ports:
+      - "8000:8000"  # Пробрасываем порт, если требуется
+    depends_on:
+      - db
+    networks:
+      - data-service-networks

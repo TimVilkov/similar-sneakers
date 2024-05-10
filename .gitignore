@@ -165,3 +165,8 @@ sneakers/data/raw_data_urls.json
 sneakers/data/url_dataset.csv
 sneakers/data/images
 sneakers/data/url_dataset_extended.csv
+sneakers/data/resized_images
+sneakers/data/golden_dataset/
+sneakers/data/labelled_dataset
+sneakers/data/labelled_sample.csv
+models/
